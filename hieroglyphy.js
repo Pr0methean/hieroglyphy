@@ -86,6 +86,12 @@
     functionConstructor = "[][" + hieroglyphyString("sort") + "][" +
         hieroglyphyString("constructor") + "]";
 
+    _number = hieroglyphyScript("return typeof +[]");
+    characters["m"] = "(" + _number + ")" + "[" + numbers[2] + "]";
+    
+    _Array = hieroglyphyScript("return [].constructor.name");
+    characters["A"] = "(" + _Array + ")" + "[" + numbers[0] + "]";
+
     //Below characters need target http(s) pages
     locationString = "[]+" + hieroglyphyScript("return location");
     characters["h"] = "(" + locationString + ")" + "[" + numbers[0] + "]";
